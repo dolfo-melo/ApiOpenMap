@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
     <title>API Open Map</title>
 </head>
 <body>
     <main>
+        <div class="mainLogo">
+            <img src="assets/logo.png" alt="mainLogo">
+            <h1>API Open Map</h1>
+        </div>
         <div class="container">
-            <div class="boxLarge">
+            <div class="boxSearch">
                 <input type="text" id="cidade" placeholder="Digite a Cidade">
                 <img src="assets/find.png" alt="pesquisa"  id="imgPesquisa" onclick="pesquisarCidade()">
             </div>
-            <h2 id="nomeCidade">Tônico</h2>
-            <h2 id="temperatura">29°</h2>
-            <h2 id="umidade">40%</h2>
-            <div class="boxSmall">
-                <h2 id="previsao">Ensoralado</h2>
-                <img src="assets/clouds.png" alt="previsaoTempo" id="previsaoTempo">
+            <div class="content">
+                <h2 id="nomeCidade"></h2>
+                <img src="" alt="" id="previsaoTempo" style="display:  none;">
+            </div>
+            <div class="boxInfo">
+                <h2 id="previsao"></h2>
+                <h2 id="temperatura"></h2>
+                <h2 id="umidade"></h2>
             </div>
         </div>
     </main>
+    <footer>
+        <p>Desenvolvido por Rodolfo Melo © 2025, todos os direitos reservados</p>
+    </footer>
 </body>
 <script src="main.js" defer></script>
 </html>
