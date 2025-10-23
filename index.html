@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API Open Map</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="boxLarge">
+                <input type="text" id="cidade" placeholder="Digite a Cidade">
+                <img src="assets/find.png" alt="pesquisa"  id="imgPesquisa" onclick="pesquisarCidade()">
+            </div>
+            <h2 id="nomeCidade">Tônico</h2>
+            <h2 id="temperatura">29°</h2>
+            <h2 id="umidade">40%</h2>
+            <div class="boxSmall">
+                <h2 id="previsao">Ensoralado</h2>
+                <img src="assets/clouds.png" alt="previsaoTempo" id="previsaoTempo">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="main.js" defer></script>
+</html>
