@@ -39,7 +39,7 @@ main{
 }
 
 .container{
-    width: 600px;
+    width: 500px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -59,6 +59,7 @@ main{
     width: 350px;
     height: 80px;
     padding: 2%;
+    margin-top: 20px;
 }
 
 .boxSearch img{
@@ -77,19 +78,16 @@ main{
     width: 350px;
     height: 80px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.content img{
-    width: 80px;
-    height: 80px;
-}
 
 .content h2{
-    font-size: 30px;
+    font-size: 48px;
     color: #fdfdfd;
-    text-shadow: 4px 0px 2px #000000;
+    text-shadow: 4px 0px 2px #000080;
 }
 
 .boxInfo{
@@ -103,6 +101,11 @@ main{
     padding: 2%;
     border: 2px solid #fdfdfd;
     border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.boxInfo img{
+    width: 30%;
 }
 
 .boxInfo h2{

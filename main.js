@@ -14,7 +14,7 @@ async function dadosApi(nomeCidade) {
 
 function trocarDados(dados){
     document.getElementById('nomeCidade').innerHTML = dados.name;
-    document.getElementById('temperatura').innerHTML = "Temperatura: " + dados.main.temp + "°";
+    document.getElementById('temperatura').innerHTML = "Temperatura: " + Math.floor(dados.main.temp) + "°C";
     document.getElementById('umidade').innerHTML = "Umidade: " + dados.main.humidity + "%";
     document.getElementById('previsao').innerHTML = dados.weather[0].description.toUpperCase();
     document.getElementById('previsaoTempo').style = "display: flex;"
